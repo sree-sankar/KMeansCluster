@@ -117,7 +117,7 @@ module kmeans_cluster #(
 // Euclidian Distance Calculation for each cluster
 //------------------------------------------------------------------------------
 
-    logic [     2*DW-1:0] euclidean_dist [0:CLUSTERS-1];
+    logic [       DW-1:0] euclidean_dist [0:CLUSTERS-1];
     logic [PARAMS*DW-1:0] centroid       [0:CLUSTERS-1];
 
     generate
